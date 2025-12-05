@@ -7,11 +7,11 @@ const QualityServicesCard = () => {
     return (
         <>
             <div className="grid grid-cols-12 gap-4">
-                <div className="col-span-4">
+                <div className="col-span-4 max-lg:col-span-6 max-md:col-span-12">
                     <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                         <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                             <div className="bg-[#422D86] w-10 h-10 rounded-full"></div>
-                            <div className="text-white text-[22px] font-light font-clashDisplay">
+                            <div className="text-white text-[22px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                                 Social Media Marketing
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const QualityServicesCard = () => {
                                 />
                             </div>
                             <div className="services-content absolute z-30 bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="h-full text-white text-[18px] font-light font-satoshi p-3">
+                                <div className="h-full text-white text-[18px] max-xl:text-[14px] font-light font-satoshi p-3">
                                     A powerful social media strategy not only grows your
                                     business, but also strengthens your online presence and
                                     creates meaningful engagement with your audience.
@@ -63,11 +63,11 @@ const QualityServicesCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-4 max-lg:col-span-6 max-md:col-span-12">
                     <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                         <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                             <div className="bg-[#422D86] w-10 h-10 rounded-full"></div>
-                            <div className="text-white text-[22px] font-light font-clashDisplay">
+                            <div className="text-white text-[22px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                                 pay Per Click
                             </div>
                         </div>
@@ -98,7 +98,7 @@ const QualityServicesCard = () => {
                                 />
                             </div>
                             <div className="services-content absolute z-30 bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="h-full text-white text-[18px] font-light font-satoshi p-3">
+                                <div className="h-full text-white text-[18px] max-xl:text-[14px] font-light font-satoshi p-3">
                                     PPC is a results-driven online advertising model where advertisers pay only when a user clicks their ad. This strategic approach ensures your budget is spent on real engagement, helping you attract high-intent customers.
                                 </div>
                             </div>
@@ -117,11 +117,11 @@ const QualityServicesCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-4 max-lg:col-span-6 max-md:col-span-12">
                     <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                         <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                             <div className="bg-[#422D86] w-10 h-10 rounded-full"></div>
-                            <div className="text-white text-[22px] font-light font-clashDisplay">
+                            <div className="text-white text-[22px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                                 Search Engine Optimization
                             </div>
                         </div>
@@ -152,7 +152,7 @@ const QualityServicesCard = () => {
                                 />
                             </div>
                             <div className="services-content absolute z-30 bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="h-full text-white text-[18px] font-light font-satoshi p-3">
+                                <div className="h-full text-white text-[18px] max-xl:text-[14px] font-light font-satoshi p-3">
                                     SEO is the backbone of every successful online marketing strategy. We deliver high-quality, data-driven SEO solutions designed to improve visibility, attract organic traffic, and build long-term growth.
                                 </div>
                             </div>
@@ -171,11 +171,11 @@ const QualityServicesCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-4 max-lg:col-span-6 max-md:col-span-12">
                     <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                         <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                             <div className="bg-[#422D86] w-10 h-10 rounded-full"></div>
-                            <div className="text-white text-[22px] font-light font-clashDisplay">
+                            <div className="text-white text-[22px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                                 Web Design & Development
                             </div>
                         </div>
@@ -206,7 +206,7 @@ const QualityServicesCard = () => {
                                 />
                             </div>
                             <div className="services-content absolute z-30 bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="h-full text-white text-[18px] font-light font-satoshi p-3">
+                                <div className="h-full text-white text-[18px] max-xl:text-[14px] font-light font-satoshi p-3">
                                     A website shouldn’t just capture attention — it should hold it. Its true purpose is to attract, engage, and guide users while clearly communicating your brand’s story, value, and personality.
                                 </div>
                             </div>
@@ -225,11 +225,11 @@ const QualityServicesCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-4 max-lg:col-span-6 max-md:col-span-12">
                     <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                         <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                             <div className="bg-[#422D86] w-10 h-10 rounded-full"></div>
-                            <div className="text-white text-[22px] font-light font-clashDisplay">
+                            <div className="text-white text-[22px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                                 Google Display Ads
                             </div>
                         </div>
@@ -260,7 +260,7 @@ const QualityServicesCard = () => {
                                 />
                             </div>
                             <div className="services-content absolute z-30 bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="h-full text-white text-[18px] font-light font-satoshi p-3">
+                                <div className="h-full text-white text-[18px] max-xl:text-[14px] font-light font-satoshi p-3">
                                     With Google Ads, your business appears exactly when people are actively searching for the services you offer. It places you at the top of relevant search results, helping you capture high-intent customers at the perfect moment.
                                 </div>
                             </div>
@@ -279,11 +279,11 @@ const QualityServicesCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-4">
+                <div className="col-span-4 max-lg:col-span-6 max-md:col-span-12">
                     <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                         <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                             <div className="bg-[#422D86] w-10 h-10 rounded-full"></div>
-                            <div className="text-white text-[22px] font-light font-clashDisplay">
+                            <div className="text-white text-[22px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                                 Performance Marketing
                             </div>
                         </div>
@@ -314,7 +314,7 @@ const QualityServicesCard = () => {
                                 />
                             </div>
                             <div className="services-content absolute z-30 bottom-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-transform duration-500">
-                                <div className="h-full text-white text-[18px] font-light font-satoshi p-3">
+                                <div className="h-full text-white text-[18px] max-xl:text-[14px] font-light font-satoshi p-3">
                                     A powerful social strategy fuels business growth, strengthens your digital presence, and builds real engagement with the audience you want to reach.
                                 </div>
                             </div>

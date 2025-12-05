@@ -1,7 +1,7 @@
 
 const SamsungLogo = ({ className, ...props }) => (
     <svg
-        className={className}
+        className={`max-lg:w-[100px] ${className}`}
         width={151}
         height={50}
         viewBox="0 0 151 50"

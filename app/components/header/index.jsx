@@ -34,13 +34,21 @@ const Header = () => {
           <div className="absolute top-0 right-0">
             <CrossIcon
               onClick={toggleMenu}
-              className="text-black cursor-pointer"
+              className="text-primary cursor-pointer"
             />
+          </div>
+          <div className="pt-16">
+            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Home</div>
+            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">About</div>
+            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Services</div>
+            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Our Clients</div>
+            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Careers</div>
+            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Testimonials</div>
           </div>
         </div>
       </div>
-      <div className="absolute top-5 left-[50%] z-30 translate-x-[-50%] w-full container flex items-center justify-between py-6">
-        <HeaderLogo classsName="max-2xl:w-[250px] max-xl:w-[180px] max-lg:w-[210px]" />
+      <div className="absolute top-5 max-[530px]:top-0 left-[50%] z-30 translate-x-[-50%] w-full container flex items-center justify-between py-6">
+        <HeaderLogo classsName="max-2xl:w-[250px] max-xl:w-[180px] max-lg:w-[210px] max-md:w-[160px] max-[370px]:!w-[120px]" />
         <div className="border border-[#524F69] rounded-full p-1 py-2 max-lg:hidden">
           {navItems.map((item) => {
             const isAvailable = item.path === "/";

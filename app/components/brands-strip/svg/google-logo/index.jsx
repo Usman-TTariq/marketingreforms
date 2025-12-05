@@ -1,7 +1,7 @@
 
 const google = ({ className, ...props }) => (
     <svg
-        className={className}
+        className={`max-lg:w-[100px] ${className}`}
         width={152}
         height={50}
         viewBox="0 0 152 50"

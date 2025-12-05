@@ -9,7 +9,7 @@ import Marquee from "../marquee-animation";
 
 const BrandsStrip = () => {
     return (
-        <div className="bg-white py-6 overflow-hidden">
+        <div className="bg-white py-6 overflow-hidden max-sm:py-2">
             <Marquee duration={20}>
                 <div className="flex items-center gap-10">
                     <div className="flex items-center gap-8">

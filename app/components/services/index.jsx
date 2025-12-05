@@ -12,11 +12,11 @@ const Services = () => {
         <ShootingStarsBackground starCount={2} />
       </div>
       <div className="container relative z-20">
-        <div className="flex items-center justify-between pb-16">
-          <div className="text-primary text-[38px] font-clashDisplay">
+        <div className="flex items-center justify-between pb-16 max-sm:pb-4 max-md:flex-col max-md:gap-2">
+          <div className="text-primary text-[38px] max-lg:text-[26px] max-md:text-[22px] font-clashDisplay">
             Quality Services
           </div>
-          <div className="text-white font-normal text-[22px] font-satoshi italic">
+          <div className="text-white font-normal text-[22px] max-lg:text-[16px] max-md:text-[14px] font-satoshi italic">
             We Offer a Full Range of Digital Marketing Services!
           </div>
         </div>

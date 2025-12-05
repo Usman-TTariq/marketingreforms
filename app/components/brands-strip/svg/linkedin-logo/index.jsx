@@ -1,7 +1,7 @@
 
 const LinkedIn = ({ className, ...props }) => (
     <svg
-        className={className}
+        className={`max-lg:w-[100px] ${className}`}
         width={184}
         height={50}
         viewBox="0 0 184 50"
