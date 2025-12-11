@@ -229,6 +229,9 @@ export default function AboutPage() {
       {/* Main About Us Content */}
       <AboutUs />
       
+      {/* Digital Marketing Strip */}
+      <MarketingStrip />
+      
       <Footer />
     </>
   );
