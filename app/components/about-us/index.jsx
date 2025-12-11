@@ -149,14 +149,16 @@ const AboutUs = () => {
                         alignItems: "center",
                     }}
                 >
-                    <PointerGlowText text="About Us" className="2xl:!text-[90%] max-2xl:!text-[80%] max-xl:!text-[70%] max-lg:!text-[60%] max-md:!text-[42%] max-sm:!text-[35%]" />
+                    <PointerGlowText text="Our Vision" className="2xl:!text-[90%] max-2xl:!text-[80%] max-xl:!text-[70%] max-lg:!text-[60%] max-md:!text-[42%] max-sm:!text-[35%]" />
                 </div>
             </div>
             <div className="container relative z-20">
-                <div className="flex items-center justify-between">
-                    <div className="text-white font-normal text-[22px] font-satoshi italic max-md:text-[14px]">Want to know who we are?</div>
-                    <div>
-                        <Button text="Learn More" />
+                <div className="flex items-center justify-between max-md:flex-col max-md:gap-4">
+                    <div className="text-primary text-[48px] max-lg:text-[36px] max-md:text-[28px] font-clashDisplay font-bold">
+                        Our Vision
+                    </div>
+                    <div className="text-white font-normal text-[22px] max-lg:text-[18px] max-md:text-[14px] font-satoshi italic">
+                        Why Are We Your Best Bet?
                     </div>
                 </div>
                 <div className="relative pt-8 mt-10">
