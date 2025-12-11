@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const AboutUs = ({ 
     backgroundText = "About Us",
-    leftHeading = null,
+    leftHeading = "",
     rightHeading = "Want to know who we are?",
     showButton = true 
 }) => {
