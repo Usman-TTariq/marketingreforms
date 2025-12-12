@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <>
       <div
-        className={`absolute backdrop-blur-xl bg-[rgba(255,255,255,0.2)] top-0 left-0 w-full invisible z-50 hidden max-lg:block ${
+        className={`fixed backdrop-blur-xl bg-[rgba(255,255,255,0.2)] top-0 left-0 w-full invisible z-50 hidden max-lg:block ${
           openMenu ? "h-full visible" : "h-0 invisible"
         }`}
       >

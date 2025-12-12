@@ -10,7 +10,18 @@ import { ShootingStarsBackground } from "../common/shooting-star-bk";
 import GridBackground from "../grid-background";
 gsap.registerPlugin(SplitText);
 
-const HeroSection = () => {
+const HeroSection = ({
+  className,
+  firstHeading,
+  firstSubHeading,
+  secondHeading,
+  secondSubHeading,
+  firstIcon = true,
+  secondIcon = true,
+  paragraph,
+  paraClassName,
+  headingClassName,
+}) => {
   const textRef = useRef(null);
   const svgRef = useRef(null);
   const withRef = useRef(null);
@@ -26,7 +37,7 @@ const HeroSection = () => {
 
     const initAnimation = async () => {
       await document.fonts.ready;
-      
+
       if (!isMounted) return;
 
       /** -------- FIRST BLOCK ANIMATION -------- */
@@ -137,9 +148,11 @@ const HeroSection = () => {
       if (textRef.current) gsap.set(textRef.current, { clearProps: "all" });
       if (svgRef.current) gsap.set(svgRef.current, { clearProps: "all" });
       if (withRef.current) gsap.set(withRef.current, { clearProps: "all" });
-      if (powTextRef.current) gsap.set(powTextRef.current, { clearProps: "all" });
+      if (powTextRef.current)
+        gsap.set(powTextRef.current, { clearProps: "all" });
       if (powSvgRef.current) gsap.set(powSvgRef.current, { clearProps: "all" });
-      if (powRightTextRef.current) gsap.set(powRightTextRef.current, { clearProps: "all" });
+      if (powRightTextRef.current)
+        gsap.set(powRightTextRef.current, { clearProps: "all" });
     };
   }, []);
 
@@ -161,7 +174,9 @@ const HeroSection = () => {
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={5} />
         </div>
-        <div className="relative container section-border pt-[1250px] z-20 max-2xl:pt-[1090px] max-xl:pt-[950px] max-lg:pt-[750px] max-md:pt-[560px]">
+        <div
+          className={`relative container section-border pt-[1250px] z-20 max-2xl:pt-[1090px] max-xl:pt-[950px] max-lg:pt-[750px] max-md:pt-[560px] ${className}`}
+        >
           <div className="absolute bottom-[3.5%] left-[30%] -translate-x-[50%] w-[18%] max-md:w-[16%]">
             <Image
               src="/images/herocircle1.png"
@@ -188,31 +203,35 @@ const HeroSection = () => {
           </div>
           <div className="absolute top-[60%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
             <div>
-              <div className="flex items-center max-2xl:justify-center gap-3 text-white font-clashDisplay capitalize text-[60px] max-2xl:text-[50px] max-xl:text-[45px] max-lg:text-[32px] max-md:text-[18px] max-[370px]:!text-[14px]">
+              <div className={`flex items-center max-2xl:justify-center gap-3 text-white font-clashDisplay capitalize text-[60px] max-2xl:text-[50px] max-xl:text-[45px] max-lg:text-[32px] max-md:text-[18px] max-[370px]:!text-[14px] ${headingClassName}`}>
                 <div ref={textRef} className="whitespace-nowrap">
-                  Increase Your Revenue
+                  {firstHeading}
                 </div>
-                <div ref={svgRef}>
-                  <RevenueIcon classsName="max-lg:w-[40px] max-md:w-[30px]"/>
-                </div>
-                <div ref={withRef}>With</div>
+                {firstIcon && (
+                  <div ref={svgRef}>
+                    <RevenueIcon classsName="max-lg:w-[40px] max-md:w-[30px]" />
+                  </div>
+                )}
+                <div ref={withRef}>{firstSubHeading}</div>
               </div>
               <div className="-mt-[18px] max-xl:-mt-[10px] max-md:-mt-[30px] flex items-center max-2xl:justify-center gap-3 text-white font-clashDisplay capitalize text-[60px] max-2xl:text-[50px] max-lg:text-[32px] max-md:text-[18px] max-[370px]:!text-[14px]">
                 <div ref={powTextRef} className="whitespace-nowrap">
-                  A Powerful
+                  {secondHeading}
                 </div>
-                <div ref={powSvgRef}>
-                  <PowerfulIcon classsName="max-lg:w-[40px] max-md:w-[30px]"/>
-                </div>
+                {secondIcon && (
+                  <div ref={powSvgRef}>
+                    <PowerfulIcon classsName="max-lg:w-[40px] max-md:w-[30px]" />
+                  </div>
+                )}
                 <div ref={powRightTextRef} className="whitespace-nowrap">
-                  Marketing Strategy!
+                  {secondSubHeading}
                 </div>
               </div>
               <div className="grid grid-cols-12">
-                <div className="col-span-8 max-lg:col-span-12 col-start-3  text-satoshi text-white text-center text-[20px] max-lg:text-[16px] max-md:text-[12px]">
-                  Marketing Reforms helps you define your budget and target
-                  audience effectively to generate high-quality,
-                  conversion-ready leads.
+                <div
+                  className={`col-span-8 max-lg:col-span-12 col-start-3  text-satoshi text-white text-center text-[20px] max-lg:text-[16px] max-md:text-[12px] ${paraClassName}`}
+                >
+                  {paragraph}
                 </div>
               </div>
               <div className="w-full flex justify-center pt-10 max-md:pt-[8px]">

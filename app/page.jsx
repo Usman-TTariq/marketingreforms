@@ -1,4 +1,3 @@
-
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
 import MarketingStrip from "@/components/marketing-strip";
@@ -13,14 +12,24 @@ export default function Home() {
   return (
     <>
       <Header />
-      <HeroSection />
+      <HeroSection
+        firstHeading="Increase Your Revenue"
+        firstSubHeading="With"
+        secondHeading="A Powerful"
+        secondSubHeading="Marketing Strategy!"
+        paragraph="Marketing Reforms helps you define your budget and target
+                  audience effectively to generate high-quality,
+                  conversion-ready leads."
+        firstIcon={true}
+        secondIcon={true}
+      />
       <MarketingStrip />
       <AboutUs />
       <YourGoals />
       <Services />
       <Testimonials />
       <BrandsStrip />
-      <Footer/>
+      <Footer />
     </>
   );
 }

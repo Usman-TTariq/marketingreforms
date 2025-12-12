@@ -7,6 +7,7 @@ const Footer = () => {
     {
       title: "Useful Links",
       links: ["Home", "About", "Our Clients", "Careers", "Testimonials"],
+      routes: ["/", "/about", "/our-clients", "/careers", "/testimonials"]
     },
     {
       title: "Services",
@@ -50,7 +51,7 @@ const Footer = () => {
                 {link?.links.map((singleLink, index) => (
                   <div key={index} className="flex flex-col items-start">
                     <Link
-                      href=""
+                      href={link?.routes ? link?.routes[index] : "#"}
                       className="text-satoshi text-white text-[14px] max-sm:text-[10px] max-sm:text-center pb-3"
                     >
                       {singleLink}
