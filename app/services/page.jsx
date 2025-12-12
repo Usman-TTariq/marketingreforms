@@ -2,8 +2,10 @@ import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
+import MarketingStrip from "@/components/marketing-strip";
 
 const Services = () => {
+  const items = ["Our Services"];
   return (
     <>
       <Header />
@@ -15,6 +17,7 @@ const Services = () => {
         paraClassName="pt-4"
         headingClassName="justify-center"
       />
+      <MarketingStrip items={items} repeat={40} />
       <Footer />
     </>
   );
