@@ -212,7 +212,7 @@ const HeroSection = ({
                     <RevenueIcon classsName="max-lg:w-[40px] max-md:w-[30px]" />
                   </div>
                 )}
-                <div ref={withRef}>{firstSubHeading}</div>
+                <div ref={withRef} className="whitespace-nowrap">{firstSubHeading}</div>
               </div>
               <div className="-mt-[18px] max-xl:-mt-[10px] max-md:-mt-[30px] flex items-center max-2xl:justify-center gap-3 text-white font-clashDisplay capitalize text-[60px] max-2xl:text-[50px] max-lg:text-[32px] max-md:text-[18px] max-[370px]:!text-[14px]">
                 <div ref={powTextRef} className="whitespace-nowrap">

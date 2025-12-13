@@ -9,84 +9,14 @@ import PointerGlowText from "../pointer-glow-text";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const AboutUs = ({ 
+const AboutUs = ({
     backgroundText = "About Us",
     leftHeading = "",
     rightHeading = "Want to know who we are?",
-    showButton = true 
+    showButton = true
 }) => {
     const containerRef = useRef(null);
     const container2Ref = useRef(null);
-
-    // useEffect(() => {
-    //     const elements = containerRef.current.querySelectorAll(".animate");
-
-    //     elements.forEach((el) => {
-    //         let combinedText = "";
-    //         el.childNodes.forEach((child) => {
-    //             if (child.nodeType === Node.TEXT_NODE || child.nodeType === Node.ELEMENT_NODE) {
-    //                 combinedText += child.textContent.trim();
-    //             }
-    //         });
-
-    //         const splitText = combinedText
-    //             .split("")
-    //             .map((char) => `<span>${char}</span>`)
-    //             .join("");
-
-    //         el.innerHTML = splitText;
-
-    //         const chars = el.querySelectorAll("span");
-
-    //         gsap.from(chars, {
-    //             color: "#A5A5A5",
-    //             stagger: 0.05,
-    //             duration: 0.3,
-    //             ease: "none",
-    //             scrollTrigger: {
-    //                 trigger: el,
-    //                 start: "top 80%", 
-    //                 end: "bottom 60%",
-    //                 scrub: true,
-    //             }
-    //         });
-    //     });
-    //     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
-    // }, []);
-
-    // useEffect(() => {
-    //     const lines = containerRef.current.querySelectorAll(".animate > div");
-
-    //     lines.forEach((line) => {
-    //         const originalText = line.textContent.trim();
-
-    //         // Split into spans (preserve spaces)
-    //         line.innerHTML = originalText
-    //             .split("")
-    //             .map((char) =>
-    //                 char === " " ? `<span>&nbsp;</span>` : `<span>${char}</span>`
-    //             )
-    //             .join("");
-
-    //         const chars = line.querySelectorAll("span");
-
-    //         gsap.from(chars, {
-    //             color: "#A5A5A5",
-    //             opacity: 0.3,
-    //             stagger: 0.035,
-    //             duration: 0.3,
-    //             ease: "none",
-    //             scrollTrigger: {
-    //                 trigger: containerRef.current,
-    //                 start: "top 85%",
-    //                 end: "bottom 65%",
-    //                 scrub: true,
-    //             },
-    //         });
-    //     });
-
-    //     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
-    // }, []);
 
     useEffect(() => {
         const animateContainer = (containerElement) => {
@@ -94,7 +24,7 @@ const AboutUs = ({
 
             lines.forEach((line) => {
                 const text = line.textContent; // keep original spacing and capitalization
-                
+
                 // Split text into spans - force no text transformation
                 line.innerHTML = text
                     .split("")
@@ -109,7 +39,7 @@ const AboutUs = ({
                 const chars = line.querySelectorAll("span");
 
                 // Animate - using fromTo to ensure proper start state
-                gsap.fromTo(chars, 
+                gsap.fromTo(chars,
                     {
                         color: "#A5A5A5",
                         opacity: 0.3,
@@ -174,9 +104,9 @@ const AboutUs = ({
                     )}
                 </div>
                 <div className="relative pt-8 mt-10">
-                    <Image className="absolute top-0 left-0 w-full h-full z-10 backdrop-blur-sm pointer-events-none" src="/images/aboutbk.png" alt="About Us" width={1000} height={1000} />
+                    <Image className="absolute top-0 left-0 w-full h-[100%] z-10 backdrop-blur-sm pointer-events-none" src="/images/aboutbk.png" alt="About Us" width={1000} height={1000} />
                     <div className="grid grid-cols-12 relative z-20">
-                        <div ref={containerRef} className="font-clashDisplay text-[32px] text-[#fff] col-span-10 text-left pl-12 pb-[200px] mt-6 max-[520px]:!mt-0 max-xl:text-[24px] max-lg:text-[20px] max-md:text-[15px] max-[520px]:!text-[12px] max-[435px]:!text-[10px] max-[355px]:!text-[8px]">
+                        <div ref={containerRef} className="font-clashDisplay text-[32px] max-2xl:text-[30px] text-[#fff] col-span-10 text-left pl-12 max-lg:pl-6 max-[380px]:!pl-2 pb-[180px] max-md:pb-[60px]  mt-6 max-md:!mt-0 max-xl:text-[24px] max-lg:text-[20px] max-md:text-[14px] max-[520px]:!text-[12px] max-[435px]:!text-[10px] max-[355px]:!text-[8px]">
                             <div className="animate">
                                 <div>Marketing Reforms is a leading digital marketing specialist.</div>
                                 <div>No matter what issue you are facing, we have a knack for</div>
@@ -187,12 +117,13 @@ const AboutUs = ({
                                 <div>We Continuously Evolve, So You Can As Well</div>
                             </div>
                         </div>
-                        <div ref={container2Ref} className="font-clashDisplay text-[34px] text-white col-span-9 col-start-4 max-xl:col-start-3 text-left pb-10 pt-10 max-xl:text-[24px] max-lg:text-[20px] max-md:text-[15px] max-[520px]:!text-[12px] max-[435px]:!text-[10px] max-[355px]:!text-[8px]">
+                        <div ref={container2Ref} className="font-clashDisplay -translate-y-[50px] max-md:-translate-y-[10px] text-[32px] max-2xl:text-[30px] text-white col-span-9 col-start-4 max-2xl:col-start-3 max-xl:col-start-3 text-left pb-10 pt-10 max-xl:text-[24px] max-lg:text-[20px] max-md:text-[15px] max-[520px]:!text-[12px] max-[435px]:!text-[10px] max-[355px]:!text-[8px]">
                             <div className="animate">
-                                <div>Marketing Reforms Transforms Brands With Expert-Led</div>
-                                <div>Digital Strategies. We Guide Businesses Through Their</div>
-                                <div>Digital Shift With Clarity, Creativity, And Performance—Delivering</div>
-                                <div className="text-primary">Real Results And A Fully Satisfied Client Base.</div>
+                                <div>The trial and error approach isn't for everyone, and we</div>
+                                <div> understand that. That's why we curated custom KPI's</div>
+                                <div>and digital solutions so that you can make the</div>
+                                <div>most of your infinte infinte resources.</div>
+                                <div className="text-primary">Take a first step toward reforming your brand for good!</div>
                             </div>
                         </div>
                     </div>
