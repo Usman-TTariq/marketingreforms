@@ -20,7 +20,7 @@ const Services = () => {
         firstSubHeading="Services"
         firstIcon={true}
         secondIcon={false}
-        paragraph="Marketing Reforms helps you define your budget and target audience effectively to generate high-quality, conversion-ready leads."
+        paragraph="Let's generate high-quality, conversion-ready leads together!"
         paraClassName="pt-4"
         headingClassName="justify-center"
       />
@@ -30,7 +30,7 @@ const Services = () => {
           <ShootingStarsBackground starCount={3} />
         </div>
         <div className="relative container">
-          <div className="flex items-center justify-between mb-16 max-md:mb-8 max-md:flex-col max-md:gap-4">
+          <div className="flex items-center justify-between mb-16 max-md:mb-8 max-lg:flex-col max-md:gap-4">
             <div className="text-primary text-[48px] max-lg:text-[36px] max-md:text-[28px] font-clashDisplay font-bold">
               Our Services
             </div>
@@ -40,7 +40,7 @@ const Services = () => {
           </div>
           <div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
-              <div className="col-span-5">
+              <div className="col-span-5 max-lg:col-span-12">
                 <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
@@ -76,7 +76,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-7">
+              <div className="col-span-7 max-lg:col-span-12">
                 <div className="text-[42px] font-clashDisplay text-primary">Social Media Marketing</div>
                 <div className="flex flex-col gap-2">
                   <div className="text-[18px] font-satoshi text-white">Our social media management covers everything.</div>
@@ -92,9 +92,9 @@ const Services = () => {
               </div>
             </div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
-              <div className="col-span-7">
+              <div className="col-span-7 max-lg:col-span-12">
                 <div className="grid grid-cols-12">
-                  <div className="col-span-10">
+                  <div className="col-span-10 max-lg:col-span-12">
                     <div className="text-[42px] font-clashDisplay text-primary">Pay-Per-Click Advertising
                     </div>
                     <div className="flex flex-col gap-2">
@@ -108,7 +108,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-5">
+              <div className="col-span-5 max-lg:col-span-12">
                 <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
@@ -146,7 +146,7 @@ const Services = () => {
               </div>
             </div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
-              <div className="col-span-5">
+              <div className="col-span-5 max-lg:col-span-12">
                 <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
@@ -182,7 +182,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-7">
+              <div className="col-span-7 max-lg:col-span-12">
                 <div className="text-[42px] font-clashDisplay text-primary">Search Engine Marketing</div>
                 <div className="flex flex-col gap-2">
                   <div className="text-[18px] font-satoshi text-white">With the help of a carefully structured SEM campaign, your brand gains immediate visibility at the top of search results. We help you to:
@@ -195,7 +195,7 @@ const Services = () => {
               </div>
             </div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
-              <div className="col-span-7">
+              <div className="col-span-7 max-lg:col-span-12">
                 <div className="grid grid-cols-12">
                   <div className="col-span-10">
                     <div className="text-[42px] font-clashDisplay text-primary">Performance Marketing
@@ -207,7 +207,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-5">
+              <div className="col-span-5 max-lg:col-span-12">
                 <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
@@ -225,7 +225,7 @@ const Services = () => {
                     <div className="absolute z-30 bottom-0 left-[10%] w-[55%]">
                       <Image
                         className="w-full h-full"
-                        src="/images/design1.png"
+                        src="/images/performance1.png"
                         alt="Social Media Marketing"
                         width={1000}
                         height={1000}
@@ -233,8 +233,8 @@ const Services = () => {
                     </div>
                     <div className="absolute z-30 bottom-0 right-[10%] w-[50%]">
                       <Image
-                        className="w-full h-full"
-                        src="/images/design2.png"
+                        className="w-full h-full scale-x-[-1]"
+                        src="/images/marketingmic.png"
                         alt="Social Media Marketing"
                         width={1000}
                         height={1000}
@@ -245,7 +245,7 @@ const Services = () => {
               </div>
             </div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
-              <div className="col-span-5">
+              <div className="col-span-5 max-lg:col-span-12">
                 <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
@@ -281,18 +281,25 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-7">
+              <div className="col-span-7 max-lg:col-span-12">
                 <div className="text-[42px] font-clashDisplay text-primary">SEO: Search Engine Optimization</div>
                 <div className="flex flex-col gap-2">
                   <div className="text-[18px] font-satoshi text-white">Even with so many websites competing for attention, you need a strategy that gets search engines to prioritize your brand. Our SEO team helps you lead the market as a mastermind who is always ten steps ahead of everyone.
                   </div>
-                  <div className="pl-4 text-[18px] font-satoshi text-white">We use smart optimization, targeted keywords, and high-quality content to drives traffic and conversions. Regardless of your workforce, whether you're local or global, we help you stand out from page one.
+                  <div className="text-[18px] font-satoshi text-white">We use smart optimization, targeted keywords, and high-quality content to drives traffic and conversions. Regardless of your workforce, whether you're local or global, we help you stand out from page one.
                   </div>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
-              <div className="col-span-5">
+              <div className="col-span-7 max-lg:col-span-12">
+                <div className="text-[42px] font-clashDisplay text-primary">Web Design and Development</div>
+                <div className="flex flex-col gap-2">
+                  <div className="text-[18px] font-satoshi text-white">Your website is often your first impression. This is why it needs to be fast, intuitive, aesthetic, and user-friendly. Not getting clicks anymore? We can help! Our design experts design, redesign, and support web applications that look great and deliver high conversion rates along with top-tier user experiences.
+                  </div>
+                </div>
+              </div>
+              <div className="col-span-5 max-lg:col-span-12">
                 <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
@@ -311,7 +318,7 @@ const Services = () => {
                     <div className="absolute z-30 bottom-0 left-[10%] w-[55%]">
                       <Image
                         className="w-full h-full"
-                        src="/images/ads1.png"
+                        src="/images/design1.png"
                         alt="Social Media Marketing"
                         width={1000}
                         height={1000}
@@ -320,7 +327,7 @@ const Services = () => {
                     <div className="absolute z-30 bottom-0 right-[10%] w-[50%]">
                       <Image
                         className="w-full h-full"
-                        src="/images/ads2.png"
+                        src="/images/design2.png"
                         alt="Social Media Marketing"
                         width={1000}
                         height={1000}
@@ -329,13 +336,7 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-7">
-                <div className="text-[42px] font-clashDisplay text-primary">Web Design and Development</div>
-                <div className="flex flex-col gap-2">
-                  <div className="text-[18px] font-satoshi text-white">Your website is often your first impression. This is why it needs to be fast, intuitive, aesthetic, and user-friendly. Not getting clicks anymore? We can help! Our design experts design, redesign, and support web applications that look great and deliver high conversion rates along with top-tier user experiences.
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

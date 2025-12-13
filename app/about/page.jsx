@@ -102,7 +102,7 @@ export default function AboutPage() {
         "Every successful collab starts with a clear understanding of business, its goals, and customers. We go through all of your competitors, evaluate market opportunities, and work on your strengths and weaknesses.",
     },
     {
-      title: "Top-Tier",
+      title: "Top-Notch Adaptive Solutions",
       description:
         "Fast, dependable, and easy to work with, Marketing Reform plugs right into your existing marketing efforts to make everything run smoother.",
     },
@@ -126,7 +126,7 @@ export default function AboutPage() {
         firstSubHeading="Marketing Reforms"
         firstIcon={true}
         secondIcon={false}
-        paragraph="With our innovative approach we make sure you get the most out of the ad spend. We currently manage over $1M in monthly advertising budgets."
+        paragraph="With our innovative approach we make sure you get the most out of the ad spend."
         paraClassName="pt-4"
       />
       {/* About Us Marquee Strip */}
@@ -202,7 +202,7 @@ export default function AboutPage() {
             <div className="text-white text-[28px] max-lg:text-[22px] max-md:text-[16px] font-clashDisplay text-center leading-relaxed mb-4">
               We Have Conquered All Avenues From Google Ads And Analytics To
               YouTube Growth Strategy, PPC, And Multiple Advanced Digital
-              Marketing Programs.
+              Marketing Programs. We currently manage over $1M in monthly advertising budgets.
             </div>
             <div className="text-primary text-[28px] max-lg:text-[22px] max-md:text-[16px] font-clashDisplay text-center font-bold">
               So, Join Hands With Marketing Reform & Scale With Confidence!

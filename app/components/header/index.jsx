@@ -28,9 +28,8 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed backdrop-blur-xl bg-[rgba(255,255,255,0.2)] top-0 left-0 w-full invisible z-50 hidden max-lg:block ${
-          openMenu ? "h-full visible" : "h-0 invisible"
-        }`}
+        className={`fixed backdrop-blur-xl bg-[rgba(255,255,255,0.2)] top-0 left-0 w-full invisible z-50 hidden max-lg:block ${openMenu ? "h-full visible" : "h-0 invisible"
+          }`}
       >
         <div className="relative m-4">
           <div className="absolute top-0 right-0">
@@ -40,12 +39,39 @@ const Header = () => {
             />
           </div>
           <div className="pt-16">
-            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Home</div>
-            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">About</div>
-            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Services</div>
-            {/* <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Our Clients</div> */}
-            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Careers</div>
-            <div className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary">Testimonials</div>
+            <Link
+              href="/"
+              className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary block"
+            >
+              Home
+            </Link>
+
+            <Link
+              href="/about"
+              className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary block"
+            >
+              About
+            </Link>
+
+            <Link
+              href="/services"
+              className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary block"
+            >
+              Services
+            </Link>
+            <Link
+              href="/careers"
+              className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary block"
+            >
+              Careers
+            </Link>
+
+            <Link
+              href="/testimonials"
+              className="text-primary text-[18px] mb-6 font-satoshi text-center pb-2 border-b border-primary block"
+            >
+              Testimonials
+            </Link>
           </div>
         </div>
       </div>
@@ -60,11 +86,10 @@ const Header = () => {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`text-[14px] font-satoshi transition px-4 py-2 rounded-full ${
-                  isActive
-                    ? "text-white bg-[linear-gradient(90deg,rgba(86,80,104,1)_0%,rgba(54,50,70,1)_100%)]"
-                    : "font-medium text-[#D7D7D7]"
-                }`}
+                className={`text-[14px] font-satoshi transition px-4 py-2 rounded-full ${isActive
+                  ? "text-white bg-[linear-gradient(90deg,rgba(86,80,104,1)_0%,rgba(54,50,70,1)_100%)]"
+                  : "font-medium text-[#D7D7D7]"
+                  }`}
               >
                 {item.label}
               </Link>
@@ -81,9 +106,9 @@ const Header = () => {
           />
         </div>
       </div>
-      <ContactPopup 
-        isOpen={openContactPopup} 
-        onClose={() => setOpenContactPopup(false)} 
+      <ContactPopup
+        isOpen={openContactPopup}
+        onClose={() => setOpenContactPopup(false)}
       />
     </>
   );
