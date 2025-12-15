@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -7,11 +8,12 @@ import { ShootingStarsBackground } from "@/components/common/shooting-star-bk";
 import Image from "next/image";
 import GridBackground from "@/components/grid-background";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import MarketingStrip from "@/components/marketing-strip";
+import { useRouter } from "next/navigation";
 
 const Services = () => {
   const items = ["Our Services"];
   const itemss = ["Digital marketing"];
+  const router = useRouter();
   return (
     <>
       <Header />
@@ -41,7 +43,7 @@ const Services = () => {
           <div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
+                <div onClick={() => router.push("/services/social-media-marketing")} className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                       Social Media Marketing (SMM)
@@ -109,7 +111,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
+                <div onClick={() => router.push("/services/pay-per-click")} className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                       Pay-Per-Click Advertising
@@ -147,7 +149,7 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
+                <div onClick={() => router.push("/services/search-engine-optimization")} className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                       Search Engine Marketing
@@ -208,7 +210,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
+                <div onClick={() => router.push("/services/performance-marketing")} className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                       Performance Marketing
@@ -246,7 +248,7 @@ const Services = () => {
             </div>
             <div className="grid grid-cols-12 gap-5 p-4 bg-[#171423] rounded-3xl mb-6">
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
+                <div onClick={() => router.push("/services/search-engine-optimization")} className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                       SEO: Search Engine Optimization
@@ -300,7 +302,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
+                <div onClick={() => router.push("/services/web-design-development")} className="service-box cursor-pointer relative bg-[#B19AFD4D] rounded-3xl p-3 group">
                   <div className="bg-[#8865FA] flex items-center gap-3 p-4 rounded-full">
                     <div className="text-white text-[24px] max-2xl:text-[18px] max-xl:text-[14px] font-light font-clashDisplay">
                       Web Design and Development

@@ -31,8 +31,9 @@ export default function SearchEngineOptimization() {
   const strategyFeatures = [
     "Credible SEO Strategies",
     "Full SEO Keyword Rankings Reports",
-    "Improve Traffic Flow",
-    "Increase Sales"
+    "High-quality and Affordable Package",
+    "Guideline-compliant Practices",
+    "High Index on Google, Bing, Yandex, Yahoo etc."
   ];
 
   const offerings = [
@@ -162,7 +163,7 @@ export default function SearchEngineOptimization() {
       </div>
 
       {/* Stats Section */}
-      <div className="relative py-16 max-md:py-10 overflow-hidden">
+      <div className="relative py-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={2} />
         </div>
@@ -238,12 +239,12 @@ export default function SearchEngineOptimization() {
             </div>
             <div className="col-span-7 max-md:col-span-12 max-md:mt-6">
               <div className="flex flex-col h-full justify-center">
-                <div className="text-[42px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[24px] font-clashDisplay text-primary mb-4">
-                  Topping the Charts By Adopting the Right SEO Strategy
+                <div className="text-[30px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[24px] font-clashDisplay text-primary mb-4">
+                  Top the Charts with the Right SEO Strategy!
                 </div>
                 <div className="flex flex-col gap-4 mb-6">
                   <div className="text-[18px] max-lg:text-[16px] max-md:text-[14px] max-sm:text-[13px] font-satoshi text-white leading-relaxed">
-                    SEO has become an integral part of running a business. So, almost all of the businesses invest a good amount of money in technical and content optimization. This phenomenon has directly increased the difficulty level. Hence, the odds of your business topping the search are slim and completely dependent on the quality of your campaign.
+                    SEO has become an integral part of running a business. Almost all businesses invest a fortune in technical and content optimization. This phenomenon has directly increased the difficulty level. Hence, the odds of your business topping the searches are slim and completely dependent on the quality of your campaign.
                   </div>
                   <div className="text-[18px] max-lg:text-[16px] max-md:text-[14px] max-sm:text-[13px] font-satoshi text-white leading-relaxed">
                     This is where you need a reliable ally that offers:
@@ -258,10 +259,10 @@ export default function SearchEngineOptimization() {
                       </div>
                     ))}
                   </div>
-                  <div className="text-[18px] max-lg:text-[16px] max-md:text-[14px] font-satoshi text-white leading-relaxed mt-2">
+                  {/* <div className="text-[18px] max-lg:text-[16px] max-md:text-[14px] font-satoshi text-white leading-relaxed mt-2">
                     Look no further, Marketing Reforms is offering all the necessary services under one roof. We offer:
-                  </div>
-                  <div className="grid grid-cols-1 gap-2 ml-4">
+                  </div> */}
+                  {/* <div className="grid grid-cols-1 gap-2 ml-4">
                     {offerings.map((offering, index) => (
                       <div key={index} className="flex items-start gap-3">
                         <div className="text-primary text-[18px] max-lg:text-[16px]">•</div>
@@ -270,7 +271,7 @@ export default function SearchEngineOptimization() {
                         </div>
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -279,7 +280,7 @@ export default function SearchEngineOptimization() {
       </div>
 
       {/* Immersive SEO Services */}
-      <div className="relative py-16 max-md:py-10 overflow-hidden">
+      <div className="relative py-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={3} />
         </div>
@@ -349,9 +350,9 @@ export default function SearchEngineOptimization() {
         </div>
       </div>
 
-      <ContactPopup 
-        isOpen={openContactPopup} 
-        onClose={() => setOpenContactPopup(false)} 
+      <ContactPopup
+        isOpen={openContactPopup}
+        onClose={() => setOpenContactPopup(false)}
       />
 
       <Footer />

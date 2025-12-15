@@ -12,32 +12,32 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      text: "Marketing Reforms completely transformed our digital presence. From day one, their team understood our vision better than we did and delivered strategies that brought real, measurable growth. Their communication, creativity, and professionalism are unmatched.",
+      text: "Our website is finally getting the traction it deserves. Thanks to Marketing Reforms, our sales are booming, would 100% recommend it to my peers.",
       name: "Mike Tyson",
       img: "/images/u1.png"
     },
     {
-      text: "The transition to their platform was the smoothest we've ever experienced. Their software is incredibly intuitive, cutting our team's training time in half. It’s powerful yet remarkably easy to use.",
+      text: "We had been running ads for a year, but nothing worked. It was only when we partnered with Marketing Reforms that we realized we were doing it all wrong. They fixed ads and made them even better. Definitely worth the money",
       name: "Alex Philips",
       img: "/images/u2.png"
     },
     {
-      text: "Our ambitious project was delivered two weeks ahead of schedule and under budget. The quality of the final deliverable was pristine. They set a new benchmark for what we expect from external consultants.",
+      text: "Soon after we chose to try Facebook ads with Marketing Reforms, our business has been booming. Definitely worth a try.",
       name: "Melinda Gates",
       img: "/images/u3.png"
     },
     {
-      text: "Before working with them, our internal processes were a mess. Their solution not only organized everything but optimized it. Our efficiency has soared, and staff morale is noticeably higher.",
+      text: "As an old-time brick-and-mortar company owner, I wasn't able to understand how SEO worked. They not only optimized my website very well, but did it without overcomplicating the process. Will definitely come back to try their other services.",
       name: "Charles Darwin",
       img: "/images/u4.png"
     },
     {
-      text: "From the initial consultation to the final review, their commitment to the highest quality standards was evident. They are meticulous, professional, and truly care about the long-term success of their clients.",
+      text: "I wanted a get more leads before the holiday season, but my budget was tight. Luckily Marketing Reforms staff was extremely understanding and took care of it. The campaign got me new traction and customers who still use my service. 100% recommended.  ",
       name: "Abby Johnson",
       img: "/images/u5.png"
     },
     {
-      text: "They never treated us like just another number. The service was highly personalized, taking into account the unique nuances of our industry. It felt tailored specifically for our success.",
+      text: "We hired Marketing Reforms to revamp our old crusty website, and they did a phenomenal job. The site looks so great, we went along with their suggestion and booked their SEO services to boost visibility, and it worked extremely well. ",
       name: "Alexandra Brown",
       img: "/images/u6.png"
     },

@@ -1,9 +1,9 @@
 
 import ArrowIcon from './svg/button-arrow-icon';
 
-const Button = ({ text, className }) => {
+const Button = ({ text, className, onClick }) => {
     return (
-        <div className='flex items-stretch'>
+        <div className='flex items-stretch' onClick={onClick}>
             <button
                 className={`px-8 py-2 max-lg:py-1.5 bg-primary rounded-full cursor-pointer max-lg:px-4 ${className}`}
             >

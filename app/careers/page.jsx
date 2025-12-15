@@ -73,7 +73,7 @@ const Careers = () => {
             ))}
           </div>
           <div className="pt-14">
-            <div className="inline px-6 py-3 text-[14px] font-satoshi font-bold text-center text-black rounded-3xl bg-primary py-2">
+            <div className="inline px-6 py-3 text-[14px] font-satoshi font-bold text-center text-black rounded-3xl border border-primary text-primary py-2">
               We're hiring
             </div>
             <div className="grid grid-cols-12 py-6">
@@ -92,10 +92,10 @@ const Careers = () => {
                 We're looking for a motivated Sales Closer to join our team.
               </div>
               <div className="flex items-center gap-2 pt-4">
-                <div className="inline px-6 py-3 text-[14px] font-satoshi font-bold text-center text-black rounded-3xl bg-primary py-2">
+                <div className="inline px-6 py-3 text-[14px] font-satoshi font-bold text-center text-black rounded-3xl border border-primary text-primary py-2">
                   Full-time
                 </div>
-                <div className="inline px-6 py-3 text-[14px] font-satoshi font-bold text-center text-black rounded-3xl bg-primary py-2">
+                <div className="inline px-6 py-3 text-[14px] font-satoshi font-bold text-center text-black rounded-3xl border border-primary text-primary py-2">
                   On-site
                 </div>
               </div>

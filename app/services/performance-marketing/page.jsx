@@ -98,7 +98,7 @@ export default function PerformanceMarketing() {
       </div>
 
       {/* Metrics Section */}
-      <div className="relative py-12 max-md:py-8 overflow-hidden">
+      <div className="relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={2} />
         </div>
@@ -123,7 +123,7 @@ export default function PerformanceMarketing() {
       </div>
 
       {/* Multi-Platform Services Section */}
-      <div className="relative py-16 max-md:py-10 overflow-hidden">
+      <div className="relative pb-16 pt-6 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={3} />
         </div>
@@ -162,12 +162,12 @@ export default function PerformanceMarketing() {
                         <div className="gradient-border h-full">
                           <div className="gradient-box h-full flex items-center justify-center p-6">
                             <div className="text-center">
-                              <div className="text-primary text-[48px] max-lg:text-[36px] font-clashDisplay font-bold mb-2">
+                              <div className="text-primary text-[86px] max-lg:text-[36px] font-clashDisplay font-bold mb-2">
                                 {index + 1}
                               </div>
-                              <div className="text-white text-[14px] max-lg:text-[12px] font-satoshi">
+                              {/* <div className="text-white text-[14px] max-lg:text-[12px] font-satoshi">
                                 Platform
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>

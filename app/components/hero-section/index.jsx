@@ -9,6 +9,7 @@ import Button from "../common/button";
 import { ShootingStarsBackground } from "../common/shooting-star-bk";
 import GridBackground from "../grid-background";
 gsap.registerPlugin(SplitText);
+import RectangleBk from "./svg/rectangle-bk";
 
 const HeroSection = ({
   className,
@@ -25,11 +26,37 @@ const HeroSection = ({
   const textRef = useRef(null);
   const svgRef = useRef(null);
   const withRef = useRef(null);
+  const heroSectionRef = useRef(null);
 
   // SECOND BLOCK REFS
   const powTextRef = useRef(null);
   const powSvgRef = useRef(null);
   const powRightTextRef = useRef(null);
+  
+  // PARAGRAPH REF
+  const paraRef = useRef(null);
+  
+  // BUTTON REF
+  const buttonRef = useRef(null);
+  
+  // HERO CIRCLE IMAGES REFS
+  const circle1Ref = useRef(null);
+  const circle2Ref = useRef(null);
+  const circle3Ref = useRef(null);
+
+  const scrollToNextSection = () => {
+    if (heroSectionRef.current) {
+      const heroElement = heroSectionRef.current;
+      const nextSibling = heroElement.nextElementSibling;
+      
+      if (nextSibling) {
+        nextSibling.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  };
 
   useEffect(() => {
     let split1, split2, tl1, tl2;
@@ -121,6 +148,50 @@ const HeroSection = ({
         },
         "-=0.2"
       );
+
+      /** -------- PARAGRAPH ANIMATION (bottom to top) -------- */
+      if (paraRef.current) {
+        tl2.from(
+          paraRef.current,
+          {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            ease: "back.out(1.7)",
+          },
+          "-=0.2"
+        );
+      }
+
+      /** -------- BUTTON ANIMATION (bottom to top) -------- */
+      if (buttonRef.current) {
+        tl2.from(
+          buttonRef.current,
+          {
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            ease: "back.out(1.7)",
+          },
+          "-=0.2"
+        );
+      }
+
+      /** -------- HERO CIRCLE IMAGES ANIMATION -------- */
+      if (circle1Ref.current && circle2Ref.current && circle3Ref.current) {
+        tl1.from(
+          [circle1Ref.current, circle2Ref.current, circle3Ref.current],
+          {
+            y: 100,
+            opacity: 0,
+            scale: 0.5,
+            duration: 1,
+            ease: "back.out(1.7)",
+            stagger: 0.2,
+          },
+          "-=0.5"
+        );
+      }
     };
 
     initAnimation();
@@ -153,23 +224,34 @@ const HeroSection = ({
       if (powSvgRef.current) gsap.set(powSvgRef.current, { clearProps: "all" });
       if (powRightTextRef.current)
         gsap.set(powRightTextRef.current, { clearProps: "all" });
+      if (paraRef.current)
+        gsap.set(paraRef.current, { clearProps: "all" });
+      if (buttonRef.current)
+        gsap.set(buttonRef.current, { clearProps: "all" });
+      if (circle1Ref.current)
+        gsap.set(circle1Ref.current, { clearProps: "all" });
+      if (circle2Ref.current)
+        gsap.set(circle2Ref.current, { clearProps: "all" });
+      if (circle3Ref.current)
+        gsap.set(circle3Ref.current, { clearProps: "all" });
     };
   }, []);
 
   return (
     <>
-      <div className="relative pb-[50px]">
+      <div ref={heroSectionRef} className="relative pb-[50px]">
         <div className="absolute bottom-0 left-0 w-full h-full z-20">
           <GridBackground className="" />
         </div>
         <div className="absolute bottom-0 left-[50%] -translate-x-[50%] w-full z-10">
-          <Image
+          {/* <Image
             src="/images/bkgradient.png"
             width={1000}
             height={1000}
             alt="Digital Marketing Gradient"
             className="w-full h-full"
-          />
+          /> */}
+          <RectangleBk className="w-full h-full" />
         </div>
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={5} />
@@ -177,7 +259,7 @@ const HeroSection = ({
         <div
           className={`relative container section-border pt-[1250px] z-20 max-2xl:pt-[1090px] max-xl:pt-[950px] max-lg:pt-[750px] max-md:pt-[560px] ${className}`}
         >
-          <div className="absolute bottom-[3.5%] left-[30%] -translate-x-[50%] w-[18%] max-md:w-[16%]">
+          <div ref={circle1Ref} className="absolute bottom-[3.5%] left-[30%] -translate-x-[50%] w-[18%] max-md:w-[16%]">
             <Image
               src="/images/herocircle1.png"
               width={1000}
@@ -185,7 +267,7 @@ const HeroSection = ({
               alt="Digital Marketing Solution Img"
             />
           </div>
-          <div className="absolute bottom-[0.001%] left-[50%] -translate-x-[50%] w-[18%] max-md:w-[16%]">
+          <div ref={circle2Ref} className="absolute bottom-[0.001%] left-[50%] -translate-x-[50%] w-[18%] max-md:w-[16%]">
             <Image
               src="/images/herocircle2.png"
               width={1000}
@@ -193,7 +275,7 @@ const HeroSection = ({
               alt="Digital Marketing Solution Img"
             />
           </div>
-          <div className="absolute bottom-[3.4%] left-[70%] -translate-x-[50%] w-[18%] max-md:w-[16%]">
+          <div ref={circle3Ref} className="absolute bottom-[3.4%] left-[70%] -translate-x-[50%] w-[18%] max-md:w-[16%]">
             <Image
               src="/images/herocircle3.png"
               width={1000}
@@ -229,13 +311,14 @@ const HeroSection = ({
               </div>
               <div className="grid grid-cols-12">
                 <div
+                  ref={paraRef}
                   className={`col-span-8 max-lg:col-span-12 col-start-3  text-satoshi text-white text-center text-[20px] max-lg:text-[16px] max-md:text-[12px] ${paraClassName}`}
                 >
                   {paragraph}
                 </div>
               </div>
-              <div className="w-full flex justify-center pt-10 max-md:pt-[8px]">
-                <Button text="Learn More" />
+              <div ref={buttonRef} className="w-full flex justify-center pt-10 max-md:pt-[8px]">
+                <Button text="Learn More" onClick={scrollToNextSection} />
               </div>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import PointerGlowText from "../pointer-glow-text";
+import { useRouter } from "next/navigation";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,6 +18,8 @@ const AboutUs = ({
 }) => {
     const containerRef = useRef(null);
     const container2Ref = useRef(null);
+
+    const router = useRouter();
 
     useEffect(() => {
         const animateContainer = (containerElement) => {
@@ -99,7 +102,7 @@ const AboutUs = ({
                     </div>
                     {showButton && !leftHeading && (
                         <div>
-                            <Button text="Learn More" />
+                            <Button text="Learn More" onClick={() => router.push("/about")} />
                         </div>
                     )}
                 </div>
@@ -111,12 +114,11 @@ const AboutUs = ({
                                 <div>Marketing Reforms is a leading digital marketing specialist.</div>
                                 <div>No matter what issue you are facing, we have a knack for</div>
                                 <div>reforming brands overnight!</div>
-
                             </div>
                         </div>
                         <div ref={container2Ref} className="font-clashDisplay translate-y-[20px] max-md:-translate-y-[10px] text-[32px] max-2xl:text-[30px] text-white col-span-9 col-start-4 max-2xl:col-start-3 max-xl:col-start-3 text-left pb-10 pt-10 max-xl:text-[24px] max-lg:text-[20px] max-md:text-[15px] max-[520px]:!text-[12px] max-[435px]:!text-[10px] max-[355px]:!text-[8px]">
                             <div className="animate">
-                                <div className="bullet">Fix Broken Bonds With All Stackeholders</div>
+                                <div className="bullet">Fix Broken Bonds With All Stakeholders</div>
                                 {/* <div className="bullet">Lead The Way From Onboarding To Set milestones</div> */}
                                 <div className="bullet">Offer Growth That doesn't Fluctuate</div>
                                 <div className="bullet">We Continuously Evolve, So You Can As Well</div>

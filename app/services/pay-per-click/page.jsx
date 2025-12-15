@@ -179,14 +179,14 @@ export default function PayPerClick() {
       </div>
 
       {/* PPC Section */}
-      <div className="relative py-16 max-md:py-10 overflow-hidden">
+      <div className="relative py-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={3} />
         </div>
         <div className="container relative z-20 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-primary text-[48px] max-lg:text-[36px] max-md:text-[28px] font-clashDisplay font-bold mb-6 text-center">
-              PPC
+            High-Performing PPC for Higher Visibility
             </div>
             <div className="text-white text-[20px] max-lg:text-[18px] max-md:text-[16px] font-satoshi leading-relaxed text-center mb-12">
               Tried your luck with PPC, but nothing seems to be working? The odds are that something is wrong with the approach you have chosen. Partner up with us and let us revitalize your resources for better mitigation and improved results.
