@@ -10,7 +10,7 @@ const Testimonials = () => {
       name: "Mike Tyson"
     },
     {
-      text: "We had been running ads for a year, but nothing worked. It was only when we partnered with Marketing Reforms that we realized we were doing it all wrong. They fixed ads and made them even better. Definitely worth the money",
+      text: "We had been running ads for a year, but nothing worked. It was only when we partnered with Marketing Reforms that we realized we were doing it all wrong. They fixed ads and made them even better. Definitely worth the money.",
       name: "Alex Philips"
     },
     {
@@ -59,8 +59,8 @@ const Testimonials = () => {
 
   const images = [
     "/images/u1.png", "/images/u2.png", "/images/u3.png", "/images/u4.png",
-    "/images/u5.png", "/images/u6.png", "/images/u7.png", "/images/u1.png",
-    "/images/u2.png", "/images/u3.png", "/images/u4.png", "/images/u5.png"
+    "/images/u5.png", "/images/u6.png", "/images/u7.png", "/images/u8.png",
+    "/images/u9.png", "/images/u10.png", "/images/u11.png", "/images/u12.png"
   ];
 
   useEffect(() => {

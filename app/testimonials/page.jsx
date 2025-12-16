@@ -17,7 +17,7 @@ const Testimonials = () => {
       img: "/images/u1.png"
     },
     {
-      text: "We had been running ads for a year, but nothing worked. It was only when we partnered with Marketing Reforms that we realized we were doing it all wrong. They fixed ads and made them even better. Definitely worth the money",
+      text: "We had been running ads for a year, but nothing worked. It was only when we partnered with Marketing Reforms that we realized we were doing it all wrong. They fixed ads and made them even better. Definitely worth the money.",
       name: "Alex Philips",
       img: "/images/u2.png"
     },
@@ -32,12 +32,12 @@ const Testimonials = () => {
       img: "/images/u4.png"
     },
     {
-      text: "I wanted a get more leads before the holiday season, but my budget was tight. Luckily Marketing Reforms staff was extremely understanding and took care of it. The campaign got me new traction and customers who still use my service. 100% recommended.  ",
+      text: "I wanted a get more leads before the holiday season, but my budget was tight. Luckily Marketing Reforms staff was extremely understanding and took care of it. The campaign got me new traction and customers who still use my service. 100% recommended.",
       name: "Abby Johnson",
       img: "/images/u5.png"
     },
     {
-      text: "We hired Marketing Reforms to revamp our old crusty website, and they did a phenomenal job. The site looks so great, we went along with their suggestion and booked their SEO services to boost visibility, and it worked extremely well. ",
+      text: "We hired Marketing Reforms to revamp our old crusty website, and they did a phenomenal job. The site looks so great, we went along with their suggestion and booked their SEO services to boost visibility, and it worked extremely well.",
       name: "Alexandra Brown",
       img: "/images/u6.png"
     },
@@ -75,17 +75,18 @@ const Testimonials = () => {
               testimonials.map((testimonial, index) => (
                 <div key={index} className="col-span-4 max-lg:col-span-6 max-md:col-span-12">
                   <div className="p-8 rounded-2xl bg-[#B19AFD4D] h-full">
-                    <div>
-
-                    </div>
-                    <div className="text-white text-[18px] font-satoshi">
-                      {`"`}{testimonial.text}{`"`}
-                    </div>
-                    <div className="flex items-center justify-start gap-3 pt-4">
-                      <Image src={testimonial.img} width={50} height={50} alt="user" />
-                      <div className="text-primary text-[20px] font-satoshi py-2">{testimonial.name}</div>
-                      <div>
-
+                    <div className="flex flex-col h-full justify-between">
+                      <div className="text-white text-[18px] font-satoshi">
+                        {`"`}{testimonial.text}{`"`}
+                      </div>
+                      <div className="flex items-center justify-start gap-3 pt-4">
+                        <Image src={testimonial.img} width={50} height={50} alt="user" />
+                        <div>
+                          <div className="text-primary text-[20px] font-satoshi pt-2">{testimonial.name}</div>
+                          <Image src="/images/stars.png" width={60} height={50} alt="user" />
+                        </div>
+                        <div>
+                        </div>
                       </div>
                     </div>
                   </div>
