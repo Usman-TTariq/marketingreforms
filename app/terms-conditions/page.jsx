@@ -11,7 +11,7 @@ export default function TermsConditions() {
         <div className="absolute top-0 left-0 w-full h-full">
           <ShootingStarsBackground starCount={3} />
         </div>
-        <div className="container relative z-20 px-4">
+        <div className="container pt-24 relative z-20 px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-primary text-[48px] max-lg:text-[36px] max-md:text-[28px] max-sm:text-[24px] font-clashDisplay font-bold mb-8 text-center">
               Terms & Conditions
